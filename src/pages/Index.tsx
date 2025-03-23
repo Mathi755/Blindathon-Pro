@@ -115,7 +115,7 @@ const Index = () => {
     };
     
     // Show secure environment notification
-    toast((t) => (
+    toast(
       <div className="flex items-start gap-3">
         <Shield className="text-green-500 mt-0.5" />
         <div>
@@ -124,8 +124,9 @@ const Index = () => {
             You are now in a secure environment. Leaving requires admin approval.
           </p>
         </div>
-      </div>
-    ), { duration: 5000 });
+      </div>,
+      { duration: 5000 }
+    );
 
     // Add event listeners
     document.addEventListener('contextmenu', disableRightClick);
