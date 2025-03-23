@@ -122,8 +122,9 @@
   }
 
   .code-editor {
-    @apply w-full min-h-[300px] font-mono text-sm bg-slate-900 text-white rounded-lg p-4 border border-sky-500/20 shadow-inner shadow-sky-500/10 focus:outline-none focus:ring-2 focus:ring-sky-500/30;
-  }
+    @apply w-full min-h-[300px] font-mono text-sm bg-slate-900 text-transparent rounded-lg p-4 border border-sky-500/20 shadow-inner shadow-sky-500/10 focus:outline-none focus:ring-2 focus:ring-sky-500/30;
+    text-shadow: none; /* Remove text shadow */
+}
 
   .question-text {
     @apply p-4 rounded-lg bg-slate-800 border border-slate-700 mb-4 text-slate-300;
