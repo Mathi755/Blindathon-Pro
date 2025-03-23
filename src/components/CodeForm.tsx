@@ -351,7 +351,7 @@ const CodeForm: React.FC<CodeFormProps> = ({ questions, onSubmitForm }) => {
           <DialogHeader>
             <DialogTitle>Confirm Your Submission</DialogTitle>
             <DialogDescription className="text-slate-400">
-              Review your code before final submission
+              Think once before your final submission
             </DialogDescription>
           </DialogHeader>
           
@@ -365,9 +365,9 @@ const CodeForm: React.FC<CodeFormProps> = ({ questions, onSubmitForm }) => {
                 <span className="text-xs text-slate-500 font-mono">{language}</span>
               </div>
               
-              <pre className="overflow-auto p-2 font-mono text-sm text-white whitespace-pre-wrap">
+             { /*<pre className="overflow-auto p-2 font-mono text-sm text-white whitespace-pre-wrap">
                 {code}
-              </pre>
+              </pre>*/}
             </div>
             
             <div className="flex gap-4 justify-end mt-4">
